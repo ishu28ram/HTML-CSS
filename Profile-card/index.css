@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+    overflow: hidden;  
+    background-color: rgb(36, 162, 168);
+}
+.outer-container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ #top{
+    width:900px;
+    position: absolute;
+    top:-350px;
+    left:-110px; 
+   animation: top 3s  linear infinite;
+   animation-fill-mode: backwards;
+  
+}
+@keyframes top {
+    from{
+        top:-350px;
+        left:-110px; 
+        
+    }
+    25%{
+        top:-300px;
+        left:-100px;
+    }
+    50%{
+        top: -200px;
+        left:-90px;
+    }
+    75%{
+        top:-300px;
+        left:-100px
+    }
+    to{
+        top:-350px;
+        left:-110px; 
+    }
+}
+#bottom{
+    width:900px;
+    position: absolute;
+    float: right;
+    bottom: -350px;
+    right:-110px; 
+    animation: bottom 3s  linear infinite;
+    animation-fill-mode: backwards;
+} 
+@keyframes bottom {
+    from{
+        bottom: -350px;
+        right:-110px; 
+    }
+    25%{
+        bottom: -300px;
+        right:-100px; 
+    }
+    50%{
+        bottom: -200px;
+        right:-90px; 
+    }
+    75%{
+        bottom: -300px;
+        right:-100px; 
+    }
+    to{
+        bottom: -350px;
+        right:-110px; 
+    }
+    }
+
+.inner-container{
+    background-color: white;
+    border-radius: 20px;
+    width:500px;
+    height:500px; 
+    z-index: 5; 
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+#card{
+    width: auto;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#profile{
+    width:150px;
+    height:150px;
+    margin: auto;
+    border-radius: 50%;
+    border:5px solid white;
+    position: relative;
+    top:-50px;
+}
+.main{
+    text-align: center;
+}
+span{
+    opacity: 0.5;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    opacity: 0.5;
+    margin:20px;
+}
+hr{
+    opacity: 0.5;
+    margin-top:30px;
+}
+.footer{
+    display: flex;
+    justify-content: center;  
+}
+.footer-1{
+    padding:20px 40px;
+    text-align: center;
+}
+h4{
+    opacity: 0.5;
+}
